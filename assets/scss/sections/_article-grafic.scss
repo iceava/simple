@@ -1,0 +1,114 @@
+
+
+
+
+img[alt="vector_smart"]{
+    @include lg-md{
+        max-width: 510px;
+    }
+
+
+
+    @include md-sm{
+        max-width: 478px;
+    }
+
+    @include sm-xs{
+        max-width: 438px;
+    }
+
+    @include xs{
+        max-width: 300px;
+    }
+}
+
+
+
+
+.grafic{
+    display: grid;
+    justify-items:center;
+    align-items: center;
+  
+
+
+
+
+
+    &-title{
+        text-align: center;
+        color: $color-header;
+        @include font-title;
+        margin-bottom: $gap;
+        margin-top: -28px;
+
+        @include xl-lg{
+            font-size: 3rem;
+        }
+        
+        @include lg-md{
+            font-size: 2.5rem;
+            margin-top: -28px;
+        
+        }
+        
+        
+        
+        @include md-sm{
+        font-size: 2.5rem;
+        margin-top: -28px;
+        }
+        
+        @include sm-xs{
+            font-size: 2.5rem;
+            letter-spacing: .8px;
+        }
+        
+        @include xs {
+            font-size: 2rem;
+            letter-spacing: .1px;
+        }
+
+    }
+
+    &-prg{
+        text-align: center;
+        max-width: 738px;
+        color: $color-gray-dark;
+        font-weight: 400;
+
+     
+        
+
+
+        
+       @include lg-md{
+        font-size: 1rem;
+        padding: 0px 25px;
+    }
+    @include md-sm{
+        font-size: 1rem;
+        padding: 0px 15px;
+        
+    }
+
+
+    
+    @include sm-xs{
+        font-size: .875rem;
+        min-width: 100%;
+        margin-left: 0px;
+        padding: 0px 15px;
+    }
+
+    @include xs{
+        font-size: .812rem;
+        min-width: 100%;
+        margin-left: 0px;
+        padding: 0px 15px;
+        margin-top: 20px;
+    }
+
+
+    }
+}

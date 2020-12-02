@@ -1,0 +1,968 @@
+.nutrition{
+   max-width: 1440px;
+   height: 882px;
+  
+    margin: 98px  auto;
+    background-color: #f0f6f4;
+    @include lg-md{
+        margin-top: 238px;
+    }
+
+    @include md-sm{
+        margin-top: 378px;
+    }
+    @include sm-xs{
+        height: 738px;
+    }
+    @include xs{
+        height: 680px;
+    }
+
+    // @include sm-xs{
+    //     max-height:382px;
+    // }
+
+
+
+   
+   &-container{
+    
+    display: grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    justify-items: center;
+    align-content: center;
+    position: relative;
+
+
+    @include md-sm{
+        grid-template-columns:repeat(3, 1fr) ;
+
+    }
+  
+
+    &__item{
+     display: grid;
+     grid-template-rows: repeat(3,1fr);
+     justify-content: center;
+     align-items: center;
+   
+
+
+    //  @include xl-lg{
+    //      margin-top: -78px;
+    //  }
+
+
+
+    //  @include lg-md{
+    //     margin-top: -178px;
+    //     // margin-bottom: 178px;
+    // }
+
+    //  @include md-sm{
+    //    margin-top: -338px;
+    //    grid-template-rows: 1fr;
+    // //    margin-bottom: 178px;
+        
+    // }
+
+
+
+    @include sm-xs{
+     
+        grid-template-rows: 1fr;
+      
+         
+     }
+
+
+    //  @include xs{
+    //     margin-top: -338px;
+    //     grid-template-rows: 1fr;
+    //     // margin-bottom: 158px;
+         
+    //  }
+
+
+   
+
+
+     &:nth-of-type(3){
+         margin-left: 11px;
+         align-self: end;
+     }
+
+     
+     &:nth-of-type(1){
+        padding-left: 38%;
+        padding-top: 11%;
+       
+
+
+        @include sm-xs{
+            margin-left: 15%;
+            padding-left: 28%;
+             
+         }
+
+         @include xs{
+            
+            padding-left: 5%;
+             
+         }
+
+    }
+
+
+
+  
+
+    &:nth-of-type(3) {
+        padding-top: 11%;
+        padding-right: 38%;
+      
+
+        
+        @include xs{
+        
+            padding-right: 5%;
+             
+         }
+
+    }
+
+    &-info{
+       position: relative;
+       margin-top: -19px;
+
+       @include sm-xs{
+           &:nth-of-type(2n+1){
+            padding: 30px 0px;
+           }
+          
+       }
+
+
+    //    &:nth-child(2){
+    //        width: 100%;
+    //     margin-left: 38px;
+
+     
+    //    }
+
+       
+    // &:nth-child(2){
+    //     width: 100%;
+    //     margin-right: 38px;
+    // }
+
+     
+    }
+
+    }
+    
+    &__box{
+        position: relative;
+         display: grid;
+         justify-self: center;
+         width: 100%;
+
+         @include xl-lg{
+             justify-content: center;
+           
+         }
+        
+     &-elipse1{
+         position: absolute;
+         top: 15%;
+         right: 0;
+         left: 19%;
+
+         @include xl-lg{
+            top: 28%;
+            right: 0;
+            left: 19%;
+         }
+         @include lg-md{
+            top: 25%;
+            right: 0;
+            left: 19%;
+            height: 250px;
+         }
+
+         
+        //  @include md-max{
+        //     top: -25%;
+        //     right: 0;
+        //     left: 15%;
+        //     height: 250px;
+        //  }
+
+          
+         @include md-sm{
+            top:  -138%;
+            right: 0;
+            left: 11%;
+            height: 138px;
+           
+         }
+
+         @include sm-xs{
+             visibility: hidden;
+         }
+
+         @include xs{
+             visibility: hidden;
+         }
+
+     }
+
+
+     &-elipse2{
+        position: absolute;
+        top: 15%;
+        right: 0;
+        left: 65%;
+        overflow: hidden;
+
+        
+        @include xl-lg{
+            top: 28%;
+            right: 0;
+            left: 65%;
+         }
+
+
+
+        @include lg-md{
+            top: 25%;
+            right: 0;
+            left: 61%;
+            height: 250px;
+         }
+
+         @include md-max{
+            top: 25%;
+            right: 0;
+            left: 68%;
+            height: 250px;
+         }
+
+         @include md-sm{
+            top:  -138%;
+            right: 0;
+            left: 78%;
+            height: 138px;
+         
+         }
+
+         @include sm-xs{
+            visibility: hidden;
+        }
+
+        @include xs{
+            visibility: hidden;
+        }
+
+    }
+
+   
+    
+
+        &-img{
+            position: absolute;
+            top: 0;
+            left: 35%;
+            right: 0;
+            bottom: 0;
+            width: 455px;
+            height: 508px;
+           
+            @include xl-lg{
+                width: 380px;
+                height:430px;
+                top: 17%;
+            }
+
+            @include lg-md{
+                width: 280px;
+                height:337px;
+                top: 17%;
+                left: 38%;
+                right: 0;
+               
+            }
+
+            @include md-max{
+               left: 39%;
+             }
+
+
+             @include md-sm{
+                 top: 35%;
+                 width: 180px;
+                height:187px;
+                left: 42%;
+             }
+
+             @include sm-xs{
+                top: 35%;
+                width: 180px;
+               height:187px;
+               left: 42%;
+             }
+
+             @include xs{
+                top: 35%;
+                width: 180px;
+               height:187px;
+               left: 42%;
+               opacity: .4;
+             }
+
+
+
+        }
+    }
+
+    // &__item{
+    //     max-width: 480px;
+    // }
+
+   
+   }
+}
+
+.info-title__left{
+    text-align: right;
+    color: $color-header;
+    font-family: $font-main;
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: .14px;
+    line-height: normal;
+    @include xl-lg{
+        font-size: 1rem;
+    }
+    @include lg-md{
+        font-size: 1rem;
+    }
+
+    @include md-sm{
+        font-size: .875rem;
+    }
+
+    @include sm-xs{
+        font-size: .82rem;
+    }
+
+    @include xs{
+        font-size: .82rem;
+    }
+
+
+ 
+}
+
+.info-title__left2{
+    text-align: right;
+    color: $color-header;
+    font-family: $font-main;
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: .14px;
+    line-height: normal;
+    margin-right: 38px;
+    @include xl-lg{
+        font-size: 1rem;
+    }
+    @include lg-md{
+        font-size: 1rem;
+    }
+
+    @include md-sm{
+        font-size: .875rem;
+    }
+
+    @include sm-xs{
+        font-size: .82rem;
+    }
+
+    @include xs{
+        font-size: .82rem;
+    }
+ 
+}
+
+.info-title__right{
+    text-align: left;
+    color: $color-header;
+    font-family: $font-main;
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: .14px;
+    line-height: normal;
+
+    @include xl-lg{
+        font-size: 1rem;
+    }
+    @include lg-md{
+        font-size: 1rem;
+    }
+
+    @include md-sm{
+        font-size: .875rem;
+    }
+   
+    @include sm-xs{
+        font-size: .82rem;
+    }
+
+    @include xs{
+        font-size: .82rem;
+    }
+
+ 
+
+   
+}
+
+.info-title__right2{
+    text-align: left;
+    color: $color-header;
+    font-family: $font-main;
+    font-size: 1.125rem;
+    font-weight: 800;
+    letter-spacing: .14px;
+    line-height: normal;
+    margin-left: 38px;
+    // margin-top: 38px;
+    
+    @include xl-lg{
+        font-size: 1rem;
+    }
+    @include lg-md{
+        font-size: 1rem;
+    }
+
+    @include md-sm{
+        font-size: .875rem;
+    }
+ 
+    @include sm-xs{
+        font-size: .82rem;
+    }
+
+    @include xs{
+        font-size: .82rem;
+    }
+}
+
+
+.info-prg__left{
+    text-align: right;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: $color-gray-dark;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-top: -15px;
+
+    
+
+    
+    
+
+    // &:nth-child(2){
+    //     margin-top: -11px;
+    // }
+
+    
+    @include lg-md{
+        font-size: .7rem;
+    }
+    @include md-sm{
+        font-size: .7rem;
+        min-width: 100%;
+    }
+
+    @include sm-xs{
+        font-size: .7rem;
+        min-width: 100%;
+    }
+
+    @include xs{
+        font-size: .7rem;
+        min-width: 100%;
+    }
+
+
+    // @include lg-md{
+    //     font-size: 1rem;
+    // }
+
+ 
+}
+
+
+.info-prg__left2{
+    text-align: right;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: $color-gray-dark;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-right: 38px;
+    margin-top: -15px;
+
+    @include lg-md{
+        font-size: .7rem;
+    }
+    @include md-sm{
+        font-size: .7rem;
+    }
+
+
+    
+    @include sm-xs{
+        font-size: .7rem;
+        min-width: 100%;
+    }
+
+    @include xs{
+        font-size: .7rem;
+        min-width: 100%;
+    }
+  
+  
+    // @include xl-lg{
+    //     font-size: 1rem;
+    // }
+
+    // @include lg-md{
+    //     font-size: 1rem;
+    // }
+
+
+ 
+}
+
+
+
+
+.info-prg__right{
+    text-align: left;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: $color-gray-dark;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-top: -15px;
+
+
+
+    @include lg-md{
+        font-size: .7rem;
+    }
+
+    @include md-sm{
+        font-size: .7rem;
+    }
+   
+
+    
+    @include sm-xs{
+        font-size: .7rem;
+        min-width: 100%;
+    }
+
+    @include xs{
+        font-size: .7rem;
+        min-width: 100%;
+    }
+ 
+}
+
+.info-prg__right2{
+    text-align: left;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: $color-gray-dark;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-left: 38px;
+    margin-top: -15px;
+ 
+
+       @include lg-md{
+        font-size: .7rem;
+    }
+    @include md-sm{
+        font-size: .7rem;
+    }
+
+
+    
+    @include sm-xs{
+        font-size: .7rem;
+        min-width: 100%;
+        margin-left: 0px;
+    }
+
+    @include xs{
+        font-size: .7rem;
+        min-width: 100%;
+        margin-left: 0px;
+    }
+ 
+}
+
+
+//  .info-image1{
+//      background-image: url(/assets/img/Forma_1233.png);
+//      background-repeat: no-repeat;
+//      position: absolute;
+//      top: 0;
+//      bottom: 0;
+//      right: 0;
+//      left: 0;
+//  }
+
+
+//  .info-image2{
+//     background-image: url(/assets/img/Forma_12.png);
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     right: 0;
+//     left: 0;
+
+// }
+
+.info-image1{
+    position: absolute;
+    top: 23%;
+    bottom: 0;
+    right: 0;
+    left: 110%;
+
+    @include md-max{
+        width: 40px;
+    }
+
+    @include sm-xs{
+        top: -11%;
+        left: 67%;
+    }
+
+    @include xs{
+        top: -15%;
+        left: 75%;
+        width: 20px;
+    }
+}
+
+.info-image2{
+    position: absolute;
+    top: 23%;
+    bottom: 0;
+    right: 0;
+    left: 93%;
+
+    @include md-max{
+        width: 40px;
+    }
+
+    @include sm-xs{
+        top: -25%;
+        left: 28%;
+    }
+
+
+    @include  xs{
+        top: 11%;
+        left: 73%;
+        width: 25px;
+    }
+}
+
+
+
+
+
+.info-image3{
+    position: absolute;
+    top: 23%;
+    bottom: 0;
+    right: 0;
+    left: 110%;
+
+    @include md-max{
+        width: 40px;
+    
+    }
+
+    @include sm-xs{
+        top: -3%;
+        left: 28%;
+    }
+
+
+
+    @include  xs{
+        top: -5%;
+        left: 50%;
+        width: 20px;
+    }
+}
+
+
+.info-image4{
+    position: absolute;
+    top: 17%;
+    bottom: 0;
+    right: 0;
+    left: -35%;
+
+    @include md-max{
+        width: 40px;
+    }
+
+
+    @include sm-xs{
+        top:0%;
+        left: 11%;
+    }
+
+
+    @include  xs{
+        top: -5%;
+        left: 10%;
+        width: 25px;
+    }
+}
+
+.info-image5{
+    position: absolute;
+    top: 17%;
+    bottom: 0;
+    right: 100%;
+    left: -17%;
+    @include md-max{
+        width: 40px;
+        left: -11%;
+    }
+
+
+    @include sm-xs{
+        top: -19%;
+        left: 58%;
+    }
+
+
+    
+    @include  xs{
+        top: 15%;
+        left: 5%;
+        width: 25px;
+    }
+}
+
+
+.info-image6{
+    position: absolute;
+    top: 17%;
+    bottom: 0;
+    right: 0;
+    left: -35%;
+    @include md-max{
+        width: 40px;
+    }
+
+
+    @include sm-xs{
+        top: 0%;
+        left: 58%;
+    }
+
+
+    
+    @include  xs{
+        top: -5%;
+        left: 38%;
+        width: 25px;
+    }
+}
+
+// .info-image4{
+//     background-image: url(/assets/img/Forma_1234.png);
+//     background-repeat: no-repeat;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     right: 0;
+//     left: 0;
+// }
+
+// .info-image5{
+//     background-image: url(/assets/img/Forma_12345.png);
+//     background-repeat: no-repeat;
+//     background-position: 35% 38%;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     right: 0;
+//     left: 0;
+// }
+
+// .info-image6{
+//     background-image: url(/assets/img/Shape_1234567.png);
+//     background-repeat: no-repeat;
+//     background-position: 35% 38%;
+//     position: absolute;
+//     top: 0;
+//     bottom: 0;
+//     right: 0;
+//     left: 0;
+// }
+
+
+
+.nutrition-container__order{
+  display: grid;
+ justify-content: center;
+ align-items: start;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  justify-self: center;
+  //margin-top: 38px;
+  row-gap: 20px;
+
+
+ 
+
+
+&-link{
+    margin-right: -28px;
+    margin-top: 28px;
+    text-align: center;
+    padding: 0;
+    font-family: $font-main;
+    font-size: 1.125rem;
+    color: $color-green;
+    font-weight: 400;
+    text-decoration: underline;
+    z-index: 2;
+    
+   
+
+
+    @include sm-xs{
+        margin-left: 7px;
+    }
+
+    @include xs{
+        margin-left: 7px;
+    }
+
+}
+
+
+
+&-btn{
+   
+    width: 200px;
+    line-height: 60px;
+    vertical-align: middle;
+    background-color: $color-green;
+    border-radius: 6px;
+    color: white;
+    font-family: $font-main;
+    font-size: 1.125rem;
+    font-weight: 800;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 28px;
+
+
+
+    @include md-sm{
+        padding: 0;
+        width: 180px;
+        vertical-align: middle;
+        line-height: 50px;
+     
+    }
+
+    @include sm-xs{
+      padding: 0;
+      width: 150px;
+      vertical-align: middle;
+      line-height: 50px;
+      font-size: 1rem;
+  }
+
+
+  @include   xs{
+      width: 150px;
+      font-size: 1rem;
+      padding: 0;
+      width: 150px;
+      vertical-align: middle;
+      line-height: 50px;
+  }
+
+}
+
+
+
+}
+
+
+
+
+.nutrition-container__box-title{
+    text-align: center;
+    margin-top:138px;
+    color: $color-header;
+    padding-top: 58px;
+    
+   @include font-title;
+
+
+
+
+   @include xl-lg{
+    font-size: 3rem;
+}
+
+@include lg-md{
+    font-size: 2.5rem;
+    margin-top: -238px;
+
+}
+
+
+
+@include md-sm{
+font-size: 2.5rem;
+margin-top: -287px;
+}
+
+@include sm-xs{
+    font-size: 2.5rem;
+}
+
+@include xs {
+    font-size: 2.5rem;
+}
+  
+
+   
+    
+}

@@ -1,0 +1,226 @@
+.test{
+
+    background-color: #f0f6f4;
+   max-width: 1440px;
+    min-height: 562px;
+    margin: 0 auto;
+    display: grid;
+    margin-top: 92px;
+    margin-bottom: 72px;
+
+
+    @include lg-md{
+    padding-right: 11px;
+    padding-bottom: 28px;
+    
+    }
+
+
+    @include md-sm{
+    padding-right: 11px;
+    padding-bottom: 28px;
+    }
+
+    @include sm-xs{
+    padding-right: 11px;
+    padding-bottom: 28px;
+    }
+
+    @include xs {
+    padding-right: 11px;
+    padding-bottom: 28px;
+    }
+  
+
+
+    &-title{
+        text-align: center;
+        @include font-title;
+        color: #121920;
+        margin-bottom: -18px;
+
+
+        @include xl-lg{
+            font-size: 3rem;
+        }
+    
+        @include lg-md{
+            font-size: 2.5rem;
+      
+        
+        }
+    
+    
+        @include md-sm{
+        font-size: 2.5rem;
+        }
+    
+        @include sm-xs{
+            font-size: 2.5rem;
+        }
+    
+        @include xs {
+            font-size: 2.5rem;
+        }
+    }
+
+    &-container{
+        display: grid;
+        grid-template-columns: repeat(4, 295px);
+        position: relative;
+        justify-content: center;
+        margin-left: 30px;
+        row-gap:$gap;
+
+        
+
+
+        @include xl-lg{
+            grid-template-columns: repeat(2, 295px);
+            
+          
+        }
+
+        
+        @include lg-md{
+            grid-template-columns: repeat(2, 295px);
+        }
+        @include md-sm{
+            grid-template-columns: repeat(2, 295px);
+        }
+
+        @include sm-xs{
+            grid-template-columns: repeat(1, 295px);
+        }
+
+
+
+        @include xs{
+            grid-template-columns: repeat(1, 295px);
+        }
+
+
+        
+
+        &__item{
+            position: relative;
+
+            &-img{
+                background-image: url(/assets/img/Scholarships.png);
+                background-position: 58% 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 263px;
+                height: 264px;
+                margin: 0 auto;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                border-radius: 10px;
+
+                @include xs{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 28px;
+                }
+
+
+                @include xs{
+                    width: 211px;
+                    height: 212px;
+                }
+             
+
+               
+
+            }
+
+            &-movie{
+               width: 263px;
+               height: 263px; 
+               border-radius: 11px;
+               border: 0px;
+             
+              @include xs{
+                width: 211px;
+                height: 212px;
+                margin-left: 28px;
+              }
+           
+            }
+
+
+        }
+
+
+        
+        &__icon{
+            background-image: url(/assets/img/Forma_1_копия_3.svg);
+            width:30px;
+            height: 30px;
+            position: absolute;
+            top: 8px;
+            bottom: 0;
+            right: 38px;
+            bottom: 0;
+            background-repeat: no-repeat;
+            background-position: 20% 20%;
+            z-index: 1;
+
+            @include xs{
+                visibility: hidden;
+            }
+        }
+
+    }
+
+    &-prg{
+        font-size: 1rem;
+        color: $color-gray-dark;
+        font-family: $font-main;
+        font-size: 1rem;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+        margin-bottom: -5px;
+       
+        
+     
+        @include xl-lg{
+           margin-bottom: 28px;
+           padding: 0px 15px;
+           
+           
+       }
+        @include lg-md{
+           margin-bottom: 28px;
+           padding: 0px 15px;
+           font-size: .877rem;
+           margin-top: 17px;
+        }
+        @include md-sm{
+            margin-bottom: 28px;
+            padding: 0px 15px;
+            font-size: .812rem;
+            margin-top: 17px;
+        }   
+
+        @include sm-xs{
+            margin-bottom: 28px;
+            padding: 0px 15px;
+            font-size: .812rem;
+            margin-top: 17px;
+        } 
+        @include xs{
+            margin-bottom: 28px;
+            padding: 0px 15px;
+            font-size: .812rem;
+            margin-top: 17px;
+        }   
+
+    }
+
+}

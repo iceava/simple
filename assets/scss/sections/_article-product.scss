@@ -1,0 +1,211 @@
+.product{
+    display: flex;
+    
+    
+    justify-content: space-around;
+    align-items: center;
+  
+    background-color: #36c1ba;   
+    max-width: 1440px;
+    min-height: 562px;
+    margin: 0 auto;
+    margin-top: 92px;
+
+    
+
+    @include lg-md{
+        flex-wrap: wrap;
+  
+    }
+
+    @include md-sm{
+        flex-wrap: wrap;
+    }
+    
+    @include sm-xs{
+        flex-wrap: wrap;
+    }
+
+    @include xs{
+     
+        flex-wrap: wrap;
+
+    }
+    
+
+ 
+  
+
+
+
+
+ 
+
+    
+    &-movie{
+       
+    border: none;
+ 
+    &__ytb{
+    border: none;
+    display: flex;
+
+
+
+
+    }
+
+        &-link{
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+          
+        }
+    }
+
+        &-description{
+            width: 357px;
+            height:278px;
+            margin-bottom: $gap;
+            margin-right: $gap;
+            min-width: 280px;
+
+           
+               
+              
+
+            &__title{
+                text-align: center;
+                color:#fff;
+                @include font-title;
+                margin-bottom: 17px;
+
+
+                
+                @include xl-lg{
+                    font-size: 3rem;
+                }
+
+                @include lg-md{
+                    font-size: 3rem;
+                
+                }
+
+
+                @include md-sm{
+                font-size: 2.5rem;
+                }
+
+                @include sm{
+                    font-size: 2.5rem;
+                }
+                    
+                
+                @include xs{
+                    font-size: 2rem;
+                  
+                }
+                    
+            }
+
+
+
+            &__prg{
+                text-align: center;
+                letter-spacing: normal;
+                font-size: 1rem;
+                font-family: $font-main;
+                line-height: normal;
+                color: #c4fffc;
+                padding-left: 25px;
+
+                @include xl-lg{
+                    padding:0px 10px;
+                
+                }
+        
+             
+
+                @include md-sm{
+                
+                    font-size: .812rem;
+                    line-height: 1.2rem;
+                 }
+
+        
+                @include sm-xs{
+                
+                   font-size: .812rem;
+                   line-height: 1rem;
+        
+                }
+
+                @include xs{
+                
+                    font-size: .712rem;
+                    line-height: 1rem;
+
+                 }
+
+                &:last-of-type{
+                    margin-top: $gap*2;
+                    line-height: 24px;
+                    margin-top: 0px;
+
+                    
+                }
+            }
+        }
+
+    
+
+  
+
+
+
+
+}
+
+img[alt="about-simpleat"]{
+    object-fit: cover;
+    margin-bottom: 25px;
+
+
+
+    @include ul-xl{
+       width: 584px;
+
+    }
+
+    @include xl-lg{
+        width: 584px;
+        margin-left:38px ;
+
+    }
+ 
+
+    @include lg-md{
+        width: 584px;
+
+    }
+
+
+    @include md-sm{
+        width: 480px;
+        align-self: flex-start;
+
+    }
+
+    @include sm-xs{
+        width: 358px;
+ 
+      
+    }
+
+    @include xs{
+        width: 287px;
+        margin-top: -78px;
+        
+    }
+
+}

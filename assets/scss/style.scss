@@ -1,0 +1,48 @@
+
+@import "../../libs/normalize-scss/sass/normalize/import-now";
+@import "skin";
+@import "variables";
+@import "mixins";
+@import "mixins-media";
+@import "extends";
+
+@import "common";
+@import "header/header";
+@import "header/header-overlay";
+@import "header/header-menu";
+@import "header/header-logo";
+@import "header/header-navbar";
+@import "header/header-content";
+
+@import "sections/section-test";
+@import "sections/article-order";
+@import "sections/article-product";
+@import "sections/section-benefits";
+@import "sections/article-main";
+@import "sections/article-nutrition.scss";
+@import "sections/article-grafic";
+@import "sections/article-tabs";
+
+@import "footer";
+
+*{
+    box-sizing: border-box;
+}
+
+
+     html{
+       font-family: 'Montserrat';
+       font-size: 16px;
+       letter-spacing:  0.1em;
+//     color: #637588;
+    overflow-x: hidden;
+ }
+
+
+ a{
+     text-decoration: none;
+     color: #000;
+ }
+
+
+    

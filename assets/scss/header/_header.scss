@@ -1,0 +1,243 @@
+.header {
+    position: relative;
+    margin: 0 auto;
+    height: 108px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+
+    &-container {
+        padding: 0px 38px 0px 58px;
+        z-index: 2;
+        display: flex;
+        position: relative;
+        align-content: center;
+        margin-left:28px ;
+        height: 100%;
+        @include lg-md{
+            margin: 0px 10px;
+        }
+
+        @include md-sm{
+            margin: 0px 10px;
+            justify-content: center;
+            // visibility: hidden;
+        }
+
+        @include sm-xs{
+            margin: 0px 10px;
+            // visibility: hidden;
+        }
+
+
+        @include xs{
+            margin: 0px 10px;
+            // visibility: hidden;
+        }
+        
+
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        &__item {
+            display: grid;
+            align-items: center;
+            grid-template-columns:1fr 1fr   ;
+        
+            &:nth-of-type(2){
+                margin-left:-115px;
+
+                
+            }
+            text-align: center;
+            @include lg-md{
+               justify-items: center;
+               
+            }
+            @include md-sm{
+              grid-template-columns:repeat( auto-fit, minmax(100px, 1fr) )
+            }
+
+            @include sm{
+                grid-template-columns:repeat( auto-fit, minmax(100px, 1fr) )
+              }
+
+
+
+  
+
+            &-cart {
+                margin-right: 0.8em;
+                text-decoration: none;
+                color:$color-header;
+            }
+
+    &-btn{
+          margin-top: 38px;
+          width: 130px;
+          line-height: 43px;
+          vertical-align: middle;
+          background-color: $color-green;
+          border-radius: 6px;
+          color: white;
+          font-family: $font-main;
+          font-size: 1rem;
+          font-weight: 700;
+          text-align: center;
+          vertical-align: middle;
+          margin-top: 7px;
+
+
+
+          @include md-sm{
+              padding: 0;
+              width: 110px;
+              vertical-align: middle;
+              line-height: 35px;
+              font-size: .872rem;
+           
+          }
+
+          @include sm-xs{
+            padding: 0;
+            width: 115px;
+            vertical-align: middle;
+            line-height: 50px;
+            font-size: 1rem;
+        }
+
+
+        @include   xs{
+            width: 150px;
+            font-size: 1rem;
+            padding: 0;
+            width: 150px;
+            vertical-align: middle;
+            line-height: 50px;
+        }
+
+      }
+          
+
+            &-contact{
+                margin-left: 15px;
+                color: $color-header;
+            }
+
+            &-sign{
+                color:$color-header;
+            }
+
+        }
+
+        &__box{
+
+
+            
+            @include lg-md{
+                margin-left: -85px;
+            }
+
+
+            @include md-sm{
+                margin-left: -11px;
+            }
+
+            
+            @include sm-xs{
+                margin-left: 0px;
+            }
+
+        }
+
+       
+    }
+}
+
+.item-cart__img{
+    background-image: url(/assets/img/Shape_1.png);
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: -28px;
+    margin-top: -5px;
+    background-repeat: no-repeat;
+    grid-column-start: 2;
+    grid-column-end: 2;
+ 
+}
+
+.fa-user{
+ font-size:1.2rem;
+}
+
+.fa-shopping-cart{
+    font-size: 1.15rem;
+}
+
+
+
+
+ .header-container__item{
+    @include md-sm{
+        display: none;
+        
+      
+    }
+
+    @include sm-xs{
+        display: none;
+    }
+
+
+    @include xs{
+        display: none;
+    }
+}
+
+.nav-menu{
+    display: none;
+}
+
+.nav-menu.active{
+    display: block;
+}
+
+
+.nav-menu{
+    position: absolute;
+    top: 73%;
+    right: 0;
+
+  
+}
+
+.nav-menu__list{
+    display: flex;
+    flex-direction: column;
+    background:  beige;
+    border-radius: 11px;
+    height: 158px;
+    padding: 11px;
+    
+
+    &-link{
+        text-align: center;
+        margin-top: 11px;
+
+        &:nth-child(4){
+            background-color: $color-green;
+            line-height: 28px;
+            vertical-align: middle;
+            font-size: .75rem;
+            color: #fff;
+            border-radius: 5px;
+
+        }
+    }
+ 
+}

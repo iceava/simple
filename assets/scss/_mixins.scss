@@ -1,0 +1,93 @@
+@mixin text-shortener {
+  display: block;
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin block-shortener($fz: 1rem, $lh: 1.5, $h: 70px, $l: 3) {
+  display: -webkit-box;
+  overflow: hidden;
+
+  height: $h;
+
+  font-size: $fz;
+  line-height: $fz * $lh;
+
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $l;
+}
+
+@mixin bg-color($a: 0, $rgb: 0) {
+  background: rgba($rgb, $rgb, $rgb, $a);
+}
+
+@mixin block-header {
+  margin: 0;
+  padding-bottom: 10px;
+
+  border-bottom: 1px solid $color-dark;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+}
+
+@mixin font-title {
+  font-family: 'Bebas Neue';
+  font-weight: 200;
+  font-size: 3.75rem;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+
+
+
+}
+
+
+@mixin image-set {
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+ 
+}
+
+
+@mixin overlay-set {
+  position: absolute;
+  opacity: 0.42;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+}
+
+
+@mixin aws-set {
+  background-repeat: no-repeat;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom:0;
+}

@@ -1,0 +1,303 @@
+
+.benefits{
+display: grid;
+justify-items: center;
+max-width: 1140px;
+margin-top: 49px;
+margin: 0 auto;
+
+
+&-btn{
+   
+    width: 249px;
+    line-height: 60px;
+    vertical-align: middle;
+    background-color: $color-green;
+    justify-self: center;
+    border-radius: 6px;
+    color: white;
+    font-family: $font-main;
+    font-size: 1.125rem;
+    font-weight: 800;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 28px;
+    border: none;
+    margin-top: 25px;
+    
+
+
+
+    @include md-sm{
+        padding: 0;
+        width: 180px;
+        font-size: 1rem;
+        vertical-align: middle;
+        line-height: 50px;
+     
+    }
+
+    @include sm-xs{
+      padding: 0;
+      width: 150px;
+      margin-top: 25px;
+      vertical-align: middle;
+      line-height: 50px;
+      font-size: .812rem;
+      margin-left: -7px;
+  }
+
+
+  @include   xs{
+    padding: 0;
+    width: 150px;
+    margin-left: -7px;
+    vertical-align: middle;
+    line-height: 50px;
+    font-size: .812rem;
+  }
+
+}
+
+}
+
+.benefits-box{
+    display: grid;
+    grid-template-columns: repeat(6 ,1fr);
+    justify-items: center;
+    align-content: center;
+    grid-gap: 30px;
+
+    @include xl-lg{
+        grid-template-columns: repeat(3 ,1fr);
+    }
+
+    @include lg-md{
+        grid-template-columns: repeat(3 ,1fr);
+        justify-items: center;
+    }
+
+    @include md-sm{
+        grid-template-columns: repeat(2 ,1fr);
+        justify-items: center;
+    }
+
+    @include sm-xs{
+        grid-template-columns: repeat(1 ,1fr);
+        justify-items: center;
+    }
+
+    @include xs{
+        grid-template-columns: repeat(1 ,1fr);
+        justify-items: center;
+    }
+}
+
+.benefits-title{
+    text-align: center;
+    @include font-title;
+    color: #121920;
+    
+
+
+       
+    @include xl-lg{
+        font-size: 3rem;
+    }
+
+    @include lg-md{
+        font-size: 2.5rem;
+    
+    }
+
+    @include md-max{
+      margin-top: 38px;
+
+       
+    }
+
+    @include md-sm{
+    font-size: 2.5rem;
+    }
+
+    @include sm-xs{
+        font-size: 2.5rem;
+    }
+
+    @include xs {
+        font-size: 2.5rem;
+    }
+    
+}
+
+.benefits-subtitle{
+    text-align: left;
+    font-family: $font-main;
+    font-size: 1rem;
+    color: $color-gray-dark;
+    font-weight: 400;
+    margin-bottom: 45px;
+
+}
+
+.benefits-box__item{
+    position: relative;
+    align-items: center;
+    width: 165px;
+    z-index: 1;
+
+    &-overlay1{
+        background-color: #39BA82;
+        @include overlay-set;
+    }
+
+    &-overlay{
+        background-color: #29C2D9;
+        @include overlay-set;
+    }
+
+    &-overlay2{
+        background-color: #39BAB2;
+        @include overlay-set;
+    }
+
+    &-overlay3{
+        background-color: #F9727F;
+        @include overlay-set;
+    }
+
+    &-overlay4{
+        background-color: #FFC835;
+        @include overlay-set;
+    }
+
+    &-overlay5{
+        background-color: #DC76FD;
+        @include overlay-set;
+    }
+
+
+
+
+
+
+
+    &-img3{
+            background-image: url(/assets/img/everydollar-15-insanely-simple-ways-to-save-money.jpg.png);
+            @include image-set;
+            background-position: 40% 80%;
+    }
+
+    &-img2{
+        background-image: url(/assets/img/time-wallpaper-4.png);
+        @include image-set;
+        background-position: 40% 50%;
+    }
+
+    &-img1{
+    
+    background-image: url(/assets/img/sécurité-alimentaire.png);
+    @include image-set;
+     
+    }
+
+    &-img4{
+        background-image: url(/assets/img/bigstock-happy-family-having-fun-outdoo-18400544.png);
+        @include image-set;
+        background-position: 80% 50%;
+    }
+
+    &-img5{
+        background-image: url(/assets/img/shutterstock_91957046@4x.png);
+        @include image-set;
+        background-position: 50% 30%;
+    }
+
+    &-img6{
+        background-image: url(/assets/img/constantly-hungry-then-try-this.jpg.png);
+        background-repeat: no-repeat;
+        background-size: 450px;
+        background-position: 45% 70%;
+        border-radius: 50%;
+        width: 165px;
+        height: 165px;
+        
+    }
+
+    &-title{
+        text-align: center;
+        font-family: $font-title;
+        font-size: 1.5rem;
+        line-height: 16px;
+        font-weight: 400; 
+        color: $color-header;
+    }
+
+
+    &-prg{
+        color: $color-gray-dark;
+        font-family: $font-main;
+        font-size: 0.812rem;
+        font-weight: 400;
+        letter-spacing: normal;
+        line-height: normal;
+        text-align: center;
+        color: #41474D;
+
+    }
+
+
+    &-aws{
+        background-image: url(/assets/img/Forma_1.svg);
+        @include aws-set;
+        background-position: 50% 18%;
+    }
+
+
+    &-aws1{
+        background-image: url(/assets/img/oclock.svg);
+        @include aws-set;
+        background-position: 50% 18%;
+    }
+    
+    &-aws2{
+        background-image: url(/assets/img/every-dollar.svg);
+        @include aws-set;
+        background-position: 50% 14%;
+    }
+    
+
+    &-aws3{
+        background-image: url(/assets/img/big-fam.svg);
+        @include aws-set;
+        background-position: 50% 18%;
+    }
+    
+    &-aws4{
+        background-image: url(/assets/img/energy-sv.svg);
+        @include aws-set;
+        background-position: 50% 14%;
+    }
+    
+    &-aws5{
+        background-image: url(/assets/img/no-nuhg.svg);
+        @include aws-set;
+        background-position: 50% 18%;
+    }
+
+  
+    
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
