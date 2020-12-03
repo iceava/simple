@@ -517,7 +517,7 @@ template {
 }
 
 .item-cart__img {
-  background-image: url(/assets/img/shappe.png);
+  background-image: url(../img/shappe.png);
   position: absolute;
   width: 40px;
   height: 40px;
@@ -932,7 +932,7 @@ img[alt="simpleat"] {
   position: absolute;
   height: 40px;
   width: 40px;
-  background-image: url(assets/img/layers.SVG);
+  background-image: url(../img/layers.svg);
   margin-left: -3.3em;
   background-color: #e5e4d7;
   outline: none;
@@ -944,7 +944,7 @@ img[alt="simpleat"] {
 }
 
 .check__input:checked + .check__box {
-  background-image: url(assets/img/check-layers.png);
+  background-image: url(../img/check-layers.png);
   width: 40px;
   height: 40px;
   vertical-align: middle;
@@ -1209,7 +1209,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-img3 {
-  background-image: url(/assets/img/everydollar-15-insanely-simple-ways-to-save-money.png);
+  background-image: url(../img/everydollar-15-insanely-simple-ways-to-save-money.png);
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
@@ -1221,7 +1221,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-img2 {
-  background-image: url(/assets/img/time-wallpaper-4.png);
+  background-image: url(../img/time-wallpaper-4.png);
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
@@ -1233,7 +1233,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-img1 {
-  background-image: url(/assets/img/sécurité-alimentaire.png);
+  background-image: url(../img/sécurité-alimentaire.png);
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
@@ -1244,7 +1244,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-img4 {
-  background-image: url(/assets/img/bigstock-happy-family-having-fun-outdoo-18400544.png);
+  background-image: url(../img/bigstock-happy-family-having-fun-outdoo-18400544.png);
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
@@ -1256,7 +1256,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-img5 {
-  background-image: url(/assets/img/shutterstock_91957046@4x.png);
+  background-image: url(../img/shutterstock_91957046@4x.png);
   background-repeat: no-repeat;
   background-size: cover;
   -o-object-fit: cover;
@@ -1268,7 +1268,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-img6 {
-  background-image: url(/assets/img/constantly-hungry-then-try-this.png);
+  background-image: url(../img/constantly-hungry-then-try-this.png);
   background-repeat: no-repeat;
   background-size: 450px;
   background-position: 45% 70%;
@@ -1298,7 +1298,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-aws {
-  background-image: url(/assets/img/Forma_1.svg);
+  background-image: url(../img/Forma_1.svg);
   background-repeat: no-repeat;
   z-index: 3;
   position: absolute;
@@ -1310,7 +1310,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-aws1 {
-  background-image: url(/assets/img/oclock.svg);
+  background-image: url(../img/oclock.svg);
   background-repeat: no-repeat;
   z-index: 3;
   position: absolute;
@@ -1322,7 +1322,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-aws2 {
-  background-image: url(/assets/img/every-dollar.svg);
+  background-image: url(../img/every-dollar.svg);
   background-repeat: no-repeat;
   z-index: 3;
   position: absolute;
@@ -1334,7 +1334,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-aws3 {
-  background-image: url(/assets/img/big-fam.svg);
+  background-image: url(../img/big-fam.svg);
   background-repeat: no-repeat;
   z-index: 3;
   position: absolute;
@@ -1346,7 +1346,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-aws4 {
-  background-image: url(/assets/img/energy-sv.svg);
+  background-image: url(../img/energy-sv.svg);
   background-repeat: no-repeat;
   z-index: 3;
   position: absolute;
@@ -1358,7 +1358,7 @@ img[alt="about-simpleat"] {
 }
 
 .benefits-box__item-aws5 {
-  background-image: url(/assets/img/no-nuhg.svg);
+  background-image: url(../img/no-nuhg.svg);
   background-repeat: no-repeat;
   z-index: 3;
   position: absolute;
