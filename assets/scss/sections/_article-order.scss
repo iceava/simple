@@ -501,7 +501,7 @@ img[alt="simpleat"] {
     position: absolute;
     height: 40px;
     width: 40px;
-    background-image: url(/assets/img/2-layers.svg);
+    background-image: url(/assets/img/layers.svg);
     margin-left: -3.3em;
     background-color: #e5e4d7;
     outline: none;
@@ -538,7 +538,7 @@ img[alt="simpleat"] {
 }
 
 .check__input:checked + .check__box {
-    background-image: url(/assets/img/2-layers.png);
+    background-image: url(/assets/img/check-layers.png);
     width: 40px;
     height: 40px;
     vertical-align: middle;
