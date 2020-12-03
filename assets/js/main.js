@@ -47,22 +47,18 @@ function pop(){
 (function(){
 
 let iframe = document.querySelectorAll('.test-container__item-movie');
-iframe[0].hasAttribute('src')
-let attr =  iframe[0].getAttribute('src')
-let attr1 = iframe[1].getAttribute('src')
-let attr2 = iframe[2].getAttribute('src')
-let attr3 = iframe[3].getAttribute('src')
-
-console.log(attr)
 
 let pic = document.querySelectorAll('.test-container__item-img');
+iframe[0].hasAttribute('src')
+if (iframe[0].hasAttribute('src')){
+        pic[0].style = 'z-index: -1;'
+}
 
 
+iframe[1].hasAttribute('src' ) ? pic[1].style = 'z-index: -1;' : pic[1].style = 'z-index: 1;'
+iframe[2].hasAttribute('src' ) ? pic[2].style = 'z-index: -1;' : pic[2].style = 'z-index: 1;'
+iframe[3].hasAttribute('src' ) ? pic[3].style = 'z-index: -1;' : pic[3].style = 'z-index: 1;'
 
-attr !== '*' ?  pic[0].style = 'z-index: -1;' :  pic[0].style = 'z-index: 2;';
-attr1 !== '*' ?  pic[1].style = 'z-index: -1;' :  pic[1].style = 'z-index: 2;';      
-attr2 !== '*' ?  pic[2].style = 'visibility: hidden;' :  pic[2].style = 'visibility: visible;';        
-attr3 !== '*' ?  pic[3].style = 'z-index: -1;' :  pic[3].style = 'z-index: 2;';  
 
 })();
 
