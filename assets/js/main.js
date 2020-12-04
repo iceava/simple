@@ -14,13 +14,14 @@ $(document).ready(function(){
 let checkBox = document.querySelectorAll('.check__input');
 let poppup = document.querySelector('.order-info__form-poppup');
 let subscribe = document.querySelector('.order-info__form-subscribe');
+let purchase = document.querySelector('.order-info__form-purchase');
 let btn  = document.querySelector('.order-info__form-price-btn');
 let data = btn.innerHTML;
 btn.innerHTML = 'Subscribe';
 
 
 function pop(){
-       
+       checkBox[0].checked ? purchase.style = 'color: #36c1ba' : purchase.style = 'color: black';
         if (checkBox[1].checked) {
           
         poppup.style = 'display: block';
@@ -36,6 +37,7 @@ function pop(){
        
 }
         checkBox[1].addEventListener('click', pop);
+        checkBox[0].addEventListener('click', pop);
 
 })();
 
