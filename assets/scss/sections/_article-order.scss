@@ -277,7 +277,10 @@
 
             @include xs{
                 grid-template-columns: 200px 200px;
+                margin: 0px;
             }
+
+
         }
 
         &-subscribe {
@@ -459,7 +462,7 @@ img[alt="simpleat"] {
     }
 
     @include xs{
-        margin-left: -211px;
+        margin-left:  11px;
         padding-left: 0px;
     }
 }
@@ -489,7 +492,7 @@ img[alt="simpleat"] {
 
     @include xs{
         margin-left: 0px;
-        margin-right: -439px;
+        margin-right: -34px;
     }
 }
 

@@ -2135,8 +2135,9 @@ html {
   letter-spacing: 0.1em;
 }
 
-body {
+body, html {
   overflow-x: hidden;
+  max-width: 100%;
 }
 
 a {
@@ -2563,8 +2564,8 @@ a {
     display: none;
   }
   .header-nav__btn {
-    margin-top: 50px;
-    margin-bottom: 54px;
+    margin-top: 0px;
+    margin-bottom: 28px;
     right: 7%;
   }
   .test {
@@ -2859,8 +2860,8 @@ a {
     display: none;
   }
   .header-nav__btn {
-    margin-top: 50px;
-    margin-bottom: 54px;
+    margin-top: 0px;
+    margin-bottom: 28px;
     right: 7%;
   }
   .test {
@@ -3190,8 +3191,8 @@ a {
     display: none;
   }
   .header-nav__btn {
-    margin-top: 50px;
-    margin-bottom: 54px;
+    margin-top: 0px;
+    margin-bottom: 28px;
     right: 3%;
   }
   .test {
@@ -3274,6 +3275,7 @@ a {
   }
   .order-info__form-check {
     grid-template-columns: 200px 200px;
+    margin: 0px;
   }
   .order-info__form-subscribe {
     font-size: .812rem;
@@ -3304,12 +3306,12 @@ a {
     height: 215px;
   }
   .option1 {
-    margin-left: -211px;
+    margin-left: 11px;
     padding-left: 0px;
   }
   .option {
     margin-left: 0px;
-    margin-right: -439px;
+    margin-right: -34px;
   }
   .check__box {
     width: 20px;
