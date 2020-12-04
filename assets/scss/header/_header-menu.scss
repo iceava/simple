@@ -4,7 +4,6 @@
     height: 28px;
     position: absolute;
     right: 11%;
-    margin: 50px auto;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -23,22 +22,23 @@
     }
 
     @include md-sm {
-      margin-top: 54px;
+      margin-top: 50px;
       margin-bottom: 54px;
         right: 7%;
     }
 
     @include sm-xs{
-      margin-top: 54px;
+      margin-top: 50px;
       margin-bottom: 54px;
         right: 7%;
     }
 
     @include xs{
-      margin-top: 54px;
+      margin-top: 50px;
       margin-bottom: 54px;
         right: 3%;
     }
+
   }
   
   
