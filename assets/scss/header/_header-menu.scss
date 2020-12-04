@@ -22,11 +22,21 @@
         display:block;
     }
 
+    @include md-sm {
+      margin-top: 54px;
+      margin-bottom: 54px;
+        right: 7%;
+    }
+
     @include sm-xs{
+      margin-top: 54px;
+      margin-bottom: 54px;
         right: 7%;
     }
 
     @include xs{
+      margin-top: 54px;
+      margin-bottom: 54px;
         right: 3%;
     }
   }
