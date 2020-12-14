@@ -12,30 +12,49 @@ $(document).ready(function(){
 (function(){
 
 let checkBox = document.querySelectorAll('.check__input');
-let poppup = document.querySelector('.order-info__form-poppup');
+let option = document.querySelector('.option');
 let subscribe = document.querySelector('.order-info__form-subscribe');
 let purchase = document.querySelector('.order-info__form-purchase');
 let btn  = document.querySelector('.order-info__form-price-btn');
 let data = btn.innerHTML;
 btn.innerHTML = 'Subscribe';
 
+checkBox[1].setAttribute('checked', 'checked')
+
+function checked(evt){
+        
+
+        let target = evt.target;
+        if(target.classList.contains('check__input')){
+        checkBox[0].checked = true;
+        checkBox[1].checked = false;
+        btn.innerHTML = data
+        checkBox[0].setAttribute('checked', 'checked')
+        if (checkBox[0].checked){
+        purchase.style = 'color: #36c1ba;'
+        subscribe.style = 'color: black;'
+                }
+        }
+
+
+}  
 
 function pop(){
-       checkBox[0].checked ? purchase.style = 'color: #36c1ba' : purchase.style = 'color: black';
-        if (checkBox[1].checked) {
-          
-        poppup.style = 'display: block';
-        subscribe.style = 'color: #36c1ba';
-        btn.innerHTML = 'Subscribe';
-                   
-        } else {
-        poppup.style = 'display: none';
-        subscribe.style = 'color: black';
-        btn.innerHTML = data;
-
-        }         
+        
+     if ( checkBox[1].checked) {
+        checkBox[0].checked = false;
+        subscribe.style = 'color: #36c1ba;'
+         purchase.style = 'color: black;'
+         btn.innerHTML = 'Subscribe'
+        }
+     
+     
+             
        
 }
+
+
+     option.addEventListener('click', checked)
         checkBox[1].addEventListener('click', pop);
         checkBox[0].addEventListener('click', pop);
 
