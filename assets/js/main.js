@@ -54,11 +54,15 @@ function pop(){
 }
 
 
-     option.addEventListener('click', checked)
+        option.addEventListener('click', checked)
         checkBox[1].addEventListener('click', pop);
         checkBox[0].addEventListener('click', pop);
 
 })();
+
+
+
+
 
 
 
@@ -82,6 +86,10 @@ iframe[3].hasAttribute('src' ) ? pic[3].style = 'z-index: -1;' : pic[3].style = 
 
 
 })();
+
+
+
+
 
 
 
