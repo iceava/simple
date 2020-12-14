@@ -18,34 +18,45 @@ let purchase = document.querySelector('.order-info__form-purchase');
 let btn  = document.querySelector('.order-info__form-price-btn');
 let data = btn.innerHTML;
 btn.innerHTML = 'Subscribe';
+let pointer = null;
 
-checkBox[1].setAttribute('checked', 'checked')
+checkBox[1].checked = true;
 
 function checked(evt){
         
-
+        checkBox[1].checked = false;
         let target = evt.target;
         if(target.classList.contains('check__input')){
-        checkBox[0].checked = true;
-        checkBox[1].checked = false;
-        btn.innerHTML = data
-        checkBox[0].setAttribute('checked', 'checked')
-        if (checkBox[0].checked){
-        purchase.style = 'color: #36c1ba;'
+         
+        target.setAttribute('checked', 'checked')
+        // checkBox[0].checked = true
         subscribe.style = 'color: black;'
-                }
+
+        btn.innerHTML = data
+        
         }
 
+        if (checkBox[0].checked){
+                purchase.style = 'color: #36c1ba;'
+                subscribe.style = 'color: black;'
+} else{
+        purchase.style = 'color: black;'
+}
 
 }  
 
 function pop(){
         
      if ( checkBox[1].checked) {
+        checkBox[1].checked = true;
         checkBox[0].checked = false;
         subscribe.style = 'color: #36c1ba;'
          purchase.style = 'color: black;'
          btn.innerHTML = 'Subscribe'
+        } else {
+                btn.innerHTML = data
+                subscribe.style = 'color: black;'
+                
         }
      
      
