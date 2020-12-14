@@ -655,3 +655,12 @@ img[alt="simpleat"] {
     color: blue;
     text-decoration: underline;
 }
+
+.body-wrapper{
+    display: none;
+
+    @include md-xs {
+        display: block;
+        
+    }
+}

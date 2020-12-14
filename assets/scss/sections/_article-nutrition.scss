@@ -840,8 +840,22 @@
   grid-column-start: 2;
   grid-column-end: 2;
   justify-self: center;
-  //margin-top: 38px;
+  margin-right: 37px;
+
   row-gap: 20px;
+@include ul-xl{
+   margin-top: 10px;
+   margin-right: 0px;
+}
+
+
+@include xl-xs{
+    margin-top: 0px;
+    margin-right: 0px;
+ }
+
+
+
 
 
  

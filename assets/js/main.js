@@ -1,13 +1,27 @@
 $(document).ready(function(){
 	$('.header-nav__btn').click(function(){
-		$(this).toggleClass('header-nav__btn--active');
+		$(this).toggleClass('header-nav__btn--active act');
 		$('.nav-menu').toggleClass('active');
 	});
 });
 
+// let btn = document.querySelector('.header-container');
+// function wrapper(event){
+// let target = event.target;
+// if(target.classList.contains('act')){
+//         let div = document.createElement('div');
+//         document.body.appendChild(div);
+//         div.classList.add('body-wrapper')
+       
+//          div.setAttribute('style', 'position:absolute; right:0;left: 0; top:0; bottom:0; background: white; z-index: 2;');
+//         //  document.body.style = 'overflow: hidden;';
+// } if(target.classList !== 'act'){
+//         div.style = 'display: none;'
+// }
 
+// }
 
-
+//  btn.addEventListener('click', wrapper);
 
 (function(){
 
