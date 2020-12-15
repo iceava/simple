@@ -201,7 +201,7 @@
 
 .nav-menu{
     right: -100%;
-    transition: .8s;
+    transition: 1.5s;
 
 }
 
@@ -225,7 +225,8 @@
 .nav-menu__list{
     display: flex;
     flex-direction: column;
-    background:  rgb(255, 255, 255);
+    background:  #ffffff;
+    border: 1px solid #ffeaea;
     border-radius: 11px;
     height: 100vh;
     width: 30vw;

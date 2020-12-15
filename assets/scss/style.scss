@@ -31,6 +31,7 @@
 
 
      html{
+         
        font-family: 'Montserrat';
        font-size: 16px;
        letter-spacing:  0.1em;
@@ -38,9 +39,9 @@
    
  }
 
- body{
-    overflow-x: hidden;
-    max-width: 100%;
+   body{
+     overflow-x: hidden;
+    
  }
 
  a{
@@ -49,19 +50,20 @@
  }
 
 
- .lock{
+   .lock{
     @include md-sm{
-        overflow: hidden !important;
+        overflow: hidden;
+      
 
     }
 
 
     @include sm-xs{
-        overflow: hidden !important;
+        overflow: hidden;
     }
   
     @include xs{
-        overflow: hidden !important;
+        overflow: hidden;
     }
   
 }

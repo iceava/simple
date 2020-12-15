@@ -538,9 +538,9 @@ template {
 
 .nav-menu {
   right: -100%;
-  -webkit-transition: .8s;
-  -o-transition: .8s;
-  transition: .8s;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
 }
 
 .nav-menu.active {
@@ -566,7 +566,8 @@ template {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: white;
+  background: #ffffff;
+  border: 1px solid #ffeaea;
   border-radius: 11px;
   height: 100vh;
   width: 30vw;
@@ -1993,7 +1994,7 @@ img[alt="Bottles_Mockup_Blue"] {
 }
 
 img[alt="img"] {
-  width: 757px;
+  max-width: 757px;
   height: 487px;
 }
 
@@ -2153,7 +2154,6 @@ html {
 
 body {
   overflow-x: hidden;
-  max-width: 100%;
 }
 
 a {
@@ -2857,6 +2857,10 @@ main {
         -ms-flex-order: 2;
             order: 2;
   }
+  img[alt="img"] {
+    width: 457px;
+    height: 387px;
+  }
   .fab {
     font-size: 3rem;
   }
@@ -2881,7 +2885,7 @@ main {
     height: 38px;
   }
   .lock {
-    overflow: hidden !important;
+    overflow: hidden;
   }
 }
 
@@ -3207,6 +3211,11 @@ main {
     width: 58px;
     margin-right: 15px;
   }
+  img[alt="img"] {
+    width: 457px;
+    height: 387px;
+    overflow: hidden;
+  }
   .fab {
     font-size: 2.5rem;
   }
@@ -3234,7 +3243,7 @@ main {
     height: 38px;
   }
   .lock {
-    overflow: hidden !important;
+    overflow: hidden;
   }
 }
 
@@ -3636,6 +3645,11 @@ main {
     width: 58px;
     margin-left: 15px;
   }
+  img[alt="img"] {
+    width: 257px;
+    height: 187px;
+    overflow: hidden;
+  }
   .fab {
     font-size: 2.5rem;
   }
@@ -3663,6 +3677,6 @@ main {
     height: 38px;
   }
   .lock {
-    overflow: hidden !important;
+    overflow: hidden;
   }
 }

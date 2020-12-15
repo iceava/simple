@@ -627,8 +627,26 @@ margin-left: -78px;
 
 
 img[alt="img"]{
-    width: 757px;
+    max-width: 757px;
     height: 487px;
+    @include md-sm {
+        width: 457px;
+        height: 387px;
+    }
+
+    @include sm-xs {
+        width: 457px;
+        height: 387px;
+        overflow: hidden;
+    }
+
+
+    
+    @include xs {
+        width: 257px;
+        height: 187px;
+        overflow: hidden;
+    }
 }
 
 .list__title, 
