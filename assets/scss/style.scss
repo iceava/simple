@@ -38,7 +38,7 @@
    
  }
 
- body, html{
+ body{
     overflow-x: hidden;
     max-width: 100%;
  }
@@ -49,4 +49,30 @@
  }
 
 
-    
+ .lock{
+    @include md-sm{
+        overflow: hidden !important;
+
+    }
+
+
+    @include sm-xs{
+        overflow: hidden !important;
+    }
+  
+    @include xs{
+        overflow: hidden !important;
+    }
+  
+}
+
+.wrapper-overlay{
+  
+    opacity: .1;
+    transition: .8s
+}
+ 
+main{
+    opacity: 1;
+    transition: .8s
+}

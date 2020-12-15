@@ -200,18 +200,23 @@
 }
 
 .nav-menu{
-    display: none;
+    right: -100%;
+    transition: .8s;
+
 }
 
 .nav-menu.active{
-    display: block;
+    right: -20px;
+    transition: .8s;
+    top: 100%;
+    overflow: auto;
+ 
 }
 
 
 .nav-menu{
     position: absolute;
     top: 98%;
-    right: -20px;
     z-index: 3;
 
   
@@ -237,6 +242,7 @@
         margin-top: 11px;
         display: block;
         margin-top: $gap*1.5;
+
   
    
     

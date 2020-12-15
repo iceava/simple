@@ -537,17 +537,24 @@ template {
 }
 
 .nav-menu {
-  display: none;
+  right: -100%;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
 }
 
 .nav-menu.active {
-  display: block;
+  right: -20px;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
+  top: 100%;
+  overflow: auto;
 }
 
 .nav-menu {
   position: absolute;
   top: 98%;
-  right: -20px;
   z-index: 3;
 }
 
@@ -2144,7 +2151,7 @@ html {
   letter-spacing: 0.1em;
 }
 
-body, html {
+body {
   overflow-x: hidden;
   max-width: 100%;
 }
@@ -2152,6 +2159,20 @@ body, html {
 a {
   text-decoration: none;
   color: #000;
+}
+
+.wrapper-overlay {
+  opacity: .1;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
+}
+
+main {
+  opacity: 1;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  transition: .8s;
 }
 
 @media (min-width: 768px) {
@@ -2859,6 +2880,9 @@ a {
     width: 87px;
     height: 38px;
   }
+  .lock {
+    overflow: hidden !important;
+  }
 }
 
 @media (max-width: 575.8px) {
@@ -3208,6 +3232,9 @@ a {
   .footer-info select[name="language"] {
     width: 87px;
     height: 38px;
+  }
+  .lock {
+    overflow: hidden !important;
   }
 }
 
@@ -3634,5 +3661,8 @@ a {
   .footer-info select[name="language"] {
     width: 87px;
     height: 38px;
+  }
+  .lock {
+    overflow: hidden !important;
   }
 }
